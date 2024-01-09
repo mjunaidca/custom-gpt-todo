@@ -7,8 +7,6 @@
 
 Remember currently it is build for a single user and can easily extended to multi user web app.
 
-##### Fun Fact: You can even call Custom GPT from mobile app and perform all these todo crud operations.
-
 ### A. Web Interface
 
 https://cax-gpt-todo.vercel.app/dashboard/manage

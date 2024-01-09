@@ -1,18 +1,21 @@
 # TODO Buddy: A Custom GPT Synced with NextJS14 Web App
 
-This Custom GPT can view all todos, add new tasks to list, update and delete them.
+### Chat with Todo Buddy and review the update on NextJS Web App.
 
-Chat with Todo Buddy and review the update on NextJS Web App.
-
-You can even call Custom GPT from mobile app and perform all these todo crud operations.
+- This Custom GPT can view all todos, add new tasks to list, update and delete them. 
+- User can manage todos themselves with nextjs14 web app.
 
 Remember currently it is build for a single user and can easily extended to multi user web app.
 
-#### FastAPI Microservice and NextJS web app are deployed on vercel:
+##### Fun Fact: You can even call Custom GPT from mobile app and perform all these todo crud operations.
+
+### A. Web Interface
 
 https://cax-gpt-todo.vercel.app/dashboard/manage
 
-#### TODO Buddy (Custom GPT)
+FastAPI Microservice and NextJS web app are deployed on vercel:
+
+### B. Todo Buddy (Custom GPT Conversational Interface)
 
 https://chat.openai.com/g/g-LsLmvsnKo-todo-buddy
 

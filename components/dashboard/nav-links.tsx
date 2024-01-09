@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
-import { HomeIcon, ListTodo, ViewIcon } from 'lucide-react';
+import { HomeIcon, ListTodo, AtomIcon } from 'lucide-react';
 
 // Map of links to display in the side navigation.
 // Depending on the size of the application, this would be stored in a database.
@@ -14,7 +14,7 @@ const links = [
     href: '/dashboard/manage',
     icon: ListTodo,
   },
-  { name: 'View All', href: '/dashboard/view', icon: ViewIcon },
+  { name: 'Todo Buddy 🤖', href: "https://chat.openai.com/g/g-LsLmvsnKo-todo-buddy", icon: AtomIcon },
 ];
 
 export default function NavLinks() {

@@ -10,20 +10,20 @@ const page = () => {
         <h1 className={cn(
           "text-3xl lg:text-5xl font-semibold text-white drop-shadow-md"
         )}>
-          🔐 Dashboard 
+          🔐 ToDo Buddy 
         </h1>
         <p className="text-white text-lg">
-          Navigate to manage, Create, Add, Delete & View Todos
+          GUI to manage todos with or Chat with Todo Buddy
         </p>
         <div className="flex flex-col justify-center items-center space-y-5">
-            <Link href="/dashboard/manage">
+            <Link href="https://chat.openai.com/g/g-LsLmvsnKo-todo-buddy" target="_blank">
             <Button variant="secondary" size="lg">
-              Manage ToDos
+              Chat with Todo Buddy 🤖
             </Button>
             </Link>
-            <Link href="/dashboard/view">
+            <Link href="/dashboard/manage">
             <Button variant="secondary" size="lg">
-              View All ToDos
+              View and Mange Todos 📝
             </Button>
             </Link>
             <CreateTodo /> 

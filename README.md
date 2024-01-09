@@ -1,53 +1,51 @@
-# CalX: Applied GenAI Multi User Todo App
+# TODO Buddy: A Custom GPT Synced with NextJS14 Web App
 
-#### Built in NextJS14 Fastapi and deployed on Vercel
+This Custom GPT can view all todos, add new tasks to list, update and delete them.
 
-#### GenAI features are In Progress!
+Chat with Todo Buddy and review the update on NextJS Web App.
 
-## Features And Tech Stack
+You can even call Custom GPT from mobile app and perform all these todo crud operations.
 
-### FastAPI Microservice
-- User registration and authentication
-- CRUD operations for todos
-- Efficently handle Database Connections (open & close sessions for users)
-- OAuth protocol to implement authentication and security
-- Configured Alembic to generate database schema and run migrations
-- SqlAlchemy ORM and Neon Serverless Postgress SQL Database 
-- Complete Unit, End to End and Integration tests using pytest and uttitest
+Remember currently it is build for a single user and can easily extended to multi user web app.
 
-- `api`: Contains the FastAPI backend microservice code, including API routes, models, and database configurations.
+#### FastAPI Microservice and NextJS web app are deployed on vercel:
 
+https://cax-gpt-todo.vercel.app/dashboard/manage
 
-### NextJS14
-- Be Dynamic at the Speed of Static
-- Use Server Actions for all User Actions
-- Middleware and NextAuth5 to implement user Authentication & Secure Routes
-- Streaming and Suspense to enchance UI
-- A custom todos management dashboard for all users
-- Shad CN Ui and Tailwind Css for UI engineering
+#### TODO Buddy (Custom GPT)
 
-## Running the Project Locally 
+https://chat.openai.com/g/g-LsLmvsnKo-todo-buddy
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+## Guide to Develop Custom GPT and Deploy NextJS14 Project on Vercel
 
-1. Clone the repository:
-```sh
-git clone ....
+#### 1. Clone the project
+
+```
+https://github.com/mjunaidca/custom-gpt-todo.git
 ```
 
-2. Rename .env.example to .env and add misisng environment variables
+ Run pnpm install to install the missing dependencies
 
-3. Run pnpm install to install the missing dependencies
+#### 2. Add Environment Variables
 
-4. Run Database Migrations
+Rename .env.template to .env and add environment variables. 
+1. For `DB` we are using SQL ALchemy ORM so you can add any database url. I will recommend 
+vercel postgress or neon serverless postgress database. 
+2. For 2nd during local testing and http://localhost:3000 and in production add vercel deplyment url.
+
+#### 3. Run Database Migrations
+
+In terminal run:
 
 - `alembic revision --autogenerate -m "Add Todos Table`
 
 - `alembic upgrade head`
 
-5. run pnpm dev and get the project running locally
+#### 4. Run Project Locally
 
-### Vercel Deplyment
+Run pnpm install to install the missing dependencies
+
+#### 5. Vercel Deplyment
 
 Delete the .next and __pucache__ and .mypy... cache files and follow the steps:
 
@@ -55,20 +53,12 @@ a. Run `vercel link` and then add all env variables to vercel deplyment. Replace
 
 b. Finally run `vercel --prod` to deploy the project.
 
+#### 6. Build Custom GPT
 
-## Future Development Roadmap
-
-Here’s what we envision for future updates:
-
-- Advanced AI Features
-- Intelligent Task Prioritization: 
-- Context-Aware Task Suggestions: 
-- Seamless Integration with External Tools
-- Smart Calendar Sync
-
-
-## The Inspiration
-Inspired by the need for a personalized, AI-driven task management tool, this project is a journey towards creating an app that not only assists in managing daily tasks but also learns and adapts to the user's lifestyle and preferences.
+1. Got to chat.openai.com open GPT builder
+2. Use GPT builder to add your gpt basic settings (name picture etc.)
+3. Click on Create Action and in Open AI schema copy gpt-openaispec.json and add it there. 
+4. Test and Save it.
 
 ## Thoughts
 

@@ -1,8 +1,6 @@
 """
 Unit Tests for TODO CRUD Routes
 """
-
-import requests
 import pytest
 from unittest.mock import patch, MagicMock, AsyncMock, ANY
 from uuid import UUID
@@ -17,9 +15,6 @@ current_dir = Path(__file__).resolve().parent
 # Add the grand grandparent directory ... (the root of your FastAPI application) to sys.path
 sys.path.append(str(current_dir.parent.parent.parent))
 
-# Now you can use relative imports
-from api.models._user_auth import LoginResonse, UserOutput, UserInDB, RegisterUser
-from api.utils._helpers import get_password_hash
 from api.index import app
 
 

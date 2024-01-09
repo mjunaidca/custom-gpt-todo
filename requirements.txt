@@ -3,6 +3,3 @@ uvicorn[standard]
 python-dotenv
 SQLAlchemy
 psycopg2-binary
-python-jose
-passlib
-python-multipart

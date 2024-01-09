@@ -63,6 +63,10 @@ b. Finally run `vercel --prod` to deploy the project.
 3. Click on Create Action and in Open AI schema copy gpt-openaispec.json and add it there. 
 4. Test and Save it.
 
+#### Some Helpful Tools FOr Building GPTs:
+https://editor-next.swagger.io/
+https://chat.openai.com/g/g-TYEliDU6A-actionsgpt
+
 ## Thoughts
 
 Feel free to ask any questions or provide feedback. Contributions are also welcome!
